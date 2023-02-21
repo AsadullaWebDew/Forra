@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    
+        .swiper {
+          width: 100%;
+          height: 100%;
+          margin-top: 20px;
+        }
+    
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+    
+        @media (max-width: 760px) {
+          .swiper-button-next {
+            right: 20px;
+            transform: rotate(90deg);
+          }
+    
+          .swiper-button-prev {
+            left: 20px;
+            transform: rotate(90deg);
+          }
+        }
+
+        .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+      </style>
+
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <!-- heder start ! -->
+    <header>
+        <div class="navTop" data-aos="fade-right">
+            <a href="./index.html"><img src="./img/header/logo.png" alt="no internet"></a>
+            <ul class="animate__animated animate__fadeInDown">
+            <li><a href="#!">Презентация</a></li>
+            <li style="margin-left: 66px;"><a class="" href="#!">Возможности</a></li>
+            <li style="margin-left: 66px;"><a href="#!">Тарифы</a></li>
+            <li style="margin-left: 66px;"><a href="#!">Отзывы</a></li>
+        </ul>
+        <div class="buttonAl"><a id="folss" href="#!">Демо-версия</a>
+            <style>
+                #folss:hover#folss::after{
+                    width: 100%;
+                }
+              #folss::after{
+                content: '';
+                width: 0;
+                height: 2px;
+                display: block;
+                background-color: #E40000;
+                transition: 0.5s;
+                margin: auto;
+              }
+            </style>
+        </div>
+    </div>
+    <div class="headerInfo">
+        <div class="infoLeft">
+            <h1 class="animate__animated  animate__fadeInTopLeft ">Увеличьте продуктивность вашей компании <strong>на 25%</strong>
+                за 1 месяц</h1>
+            <p class="animate__animated  animate__fadeInTopLeft ">Программа FORRA.price помогает автоматизировать расчет вывесок и управлять заказами в рекламном производстве</p>
+        <button type="button" id="buttonAll" class="btn btn-primary animate__animated  animate__fadeInTopLeft " data-toggle="modal" data-target="#myModal">Оставить заявку</button>
+        
+          <!-- The Modal -->
+          <div class="modal" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+              
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h1 class="modal-title">Оставить заявку</h1>
+                  <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <input class="form-control" placeholder="Your name" type="text">
+                    <input class="form-control mt-3" placeholder="Your surname" type="text">
+                    <input class="form-control mt-3" type="date">
+                </div>
+                
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" id="send" class="btn btn-danger" data-dismiss="modal">Send</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="infoRight" data-aos="zoom-out-left">
+            <img src="./img/header/photo_2023-02-21_16-25-44.jpg" alt="no internet">
+        </div>
+    </div>
+    <div class="slidAd" data-aos="zoom-out-left">
+        <h2 >Программу уже протестировали</h2>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><a href="#!" title="Logo"><img src="./img/header/Frame 1465.png" alt="no internet"></a></div>
+              <div class="swiper-slide"><a href="#!" title="Logo"><img src="./img/header/image 2.png" alt="no internet"></a></div>
+              <div class="swiper-slide"><a href="#!" title="Logo"><img src="./img/header/image 3.png" alt="no internet"></a></div>
+              <div class="swiper-slide"><a href="#!" title="Logo"><img src="./img/header/image 4.png" alt="no internet"></a></div>
+              <div class="swiper-slide"><a href="#!" title="Logo"><img src="./img/header/image 5.png" alt="no internet"></a></div>
+              <div class="swiper-slide"><a href="#!" title="Logo"><img src="./img/header/image 3.png" alt="no internet"></a></div>
+              <div class="swiper-slide"><a href="#!" title="Logo"><img src="./img/header/Frame 1465.png" alt="no internet"></a></div>
+              <div class="swiper-slide"><a href="#!" title="Logo"><img src="./img/header/image 5.png" alt="no internet"></a></div>
+              <div class="swiper-slide"><a href="#!" title="Logo"><img src="./img/header/image 4.png" alt="no internet"></a></div>
+              <div class="swiper-slide"><a href="#!" title="Logo"><img src="./img/header/image 2.png" alt="no internet"></a></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+    </div>
+    </header>
+    <!-- header fenesh -->
+
+    <!-- nav start ! -->
+    <nav>
+        <div class="navTop" data-aos="fade-right" >
+            <h2 class="animate__animated animate__fadeInLeft ">FOR <strong>RA</strong>.price - это автоматизация РПК любого уровня</h2>
+        </div>
+        <div class="informationNAv">
+            <div class="navCenter">
+                <div style="margin-top: -100px;" class="navButtom">
+                    <div class="buttomLeft" data-aos="fade-right">
+                        <iframe width="560" height="291" src="https://www.youtube.com/embed/OZowHEjWn0E" title="Windows 12.1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="buttomRight" data-aos="fade-left">
+                        <h2>Точный расчет вывесок</h2>
+                        <p>Ваши менеджеры смогут самостоятельно и точно рассчитать любую рекламную конструкцию для своих клиентов за 45 секунд. Подробная смета формируется автоматически</p>
+                    </div>
+                </div>
+                <div style="margin-top: -240px;" class="navButtom">
+                    <div class="buttomRight" data-aos="fade-left">
+                        <h2>Точный расчет вывесок</h2>
+                        <p>Ваши менеджеры смогут самостоятельно и точно рассчитать любую рекламную конструкцию для своих клиентов за 45 секунд. Подробная смета формируется автоматически</p>
+                    </div>
+                    <div class="buttomLeft" data-aos="fade-right">
+                        <iframe width="560" height="291" src="https://www.youtube.com/embed/OZowHEjWn0E" title="Windows 12.1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div style="margin-top: -240px;" class="navButtom">
+                    <div class="buttomLeft" data-aos="fade-right">
+                        <iframe width="560" height="291" src="https://www.youtube.com/embed/OZowHEjWn0E" title="Windows 12.1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="buttomRight" data-aos="fade-left">
+                        <h2>Точный расчет вывесок</h2>
+                        <p>Ваши менеджеры смогут самостоятельно и точно рассчитать любую рекламную конструкцию для своих клиентов за 45 секунд. Подробная смета формируется автоматически</p>
+                    </div>
+                </div>
+                <div style="margin-top: -240px;" class="navButtom">
+                    <div class="buttomRight" data-aos="fade-left">
+                        <h2>Точный расчет вывесок</h2>
+                        <p>Ваши менеджеры смогут самостоятельно и точно рассчитать любую рекламную конструкцию для своих клиентов за 45 секунд. Подробная смета формируется автоматически</p>
+                    </div>
+                    <div class="buttomLeft" data-aos="fade-right">
+                        <iframe width="560" height="291" src="https://www.youtube.com/embed/OZowHEjWn0E" title="Windows 12.1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="buttonInf" style="margin-top: -110px;">
+                    <a class="animate__animated animate__animated " href="#!">Попробовать бесплатно</a>
+                </div>
+            </div>
+        </div>
+        <div class="navButtomKm">
+            <div class="buttomCenter">
+                <h2>Полное внедрение программы за 1 месяц</h2>
+                <div class="centerBox">
+                    <div class="boxsSm" data-aos="fade-down-right">
+                        <img src="./img/nav/Group 49.png" alt="no internet">
+                        <h2>45 готовых шаблонов вывесок для расчета</h2>
+                        <p>Шаблоны расчета большинства типовых рекламных вывесок уже внесены в программу и готовы к использованию.</p>
+                    </div>
+                    <div class="boxsSm" data-aos="fade-down">
+                        <img src="./img/nav/Group 50.png" alt="no internet">
+                        <h2>Удобный и интуитивно понятный интерфейс</h2>
+                        <p>Максимально облегчает сотрудникам процесс обучения и значительно ускоряет внедрение программы</p>
+                    </div>
+                    <div class="boxsSm" data-aos="fade-down-left">
+                        <img src="img/nav/Group 53.png" alt="no internet">
+                        <h2>Быстрое и эффективное обучение сотрудников</h2>
+                        <p>Вы получаете подробный видео курс по настройке, адаптации и пошаговому внедрению программы в Вашу компанию</p>
+                    </div>
+                    <div class="boxsSm" data-aos="fade-right">
+                        <img src="img/nav/Group 52.png" alt="no internet">
+                        <h2>Гибкие настройки под любые процессы компании</h2>
+                        <p>Уникальная система работы программы позволяет быстро настроить любую логику расчета рекламных конструкций</p>
+                    </div>
+                    <div class="boxsSm" data-aos="zoom-in">
+                        <img src="img/./nav/Group 53.png" alt="no internet">
+                        <h2>Простая и прозрачная финансовая аналитика</h2>
+                        <p>Система быстрых отчетов покажет реальную прибыль всех отделений компании уже через 1 месяц работы в программе</p>
+                    </div>
+                    <div class="boxsSm" data-aos="fade-down-left">
+                        <img src="./img/nav/Group 54.png" alt="no internet">
+                        <h2>Готовый справочник расчета сдельных работ в цехе</h2>
+                        <p>Базовые цены на сдельные работы уже внесены в справочник. Проверка и корректировка займет минимум времени руководителя</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- nav fenesh ! -->
+
+    <!-- section stert ! -->
+    <section>
+        <div class="sectionTop">
+            <div class="topCenter">
+                <h2 data-aos="fade-right"> FOR <strong>RA</strong>.price - это лучший опыт владельцев рекламного бизнеса</h2>
+                <img data-aos="fade-left" src="./img/section/img1.png" alt="no internet">
+            </div>
+        </div>
+        <div class="sectionInfors">
+            <div class="inforsCenter">
+                <h2>Тарифы</h2>
+                <div class="gritCenter">
+                        <div class="boxIj" data-aos="flip-left">
+                            <h2>Базовая версия
+                                программы</h2>
+                                <ul>
+                                    <li><a href="#!"> <i class="fa-solid fa-check"></i>Бессрочная лицензия
+                                    </a></li>
+                                    <li><a href="#!"> <i class="fa-solid fa-check"></i>1 пользователь
+                                    </a></li>
+                                    <li><a href="#!"> <i class="fa-solid fa-check"></i>Обновления + 2500 руб.
+                                    </a></li>
+                                    <li><a href="#!"> <i class="fa-solid fa-check"></i>Логотип FORRA</a></li>
+                                </ul>
+                                <h3>34 900 руб.</h3>
+                                <div class="buttonGr">
+                                    <a href="#!">Купить</a>
+                                </div>
+                        </div>
+                        <div class="boxIj" data-aos="flip-down">
+                            <div class="ifLeft">
+                                <h2>Апгрейд №1
+                                    к базовой версии</h2>
+                                    <ul>
+                                        <li><a href="#!"> <i class="fa-solid fa-check"></i>Ежемесячная подписка
+                                        </a></li>
+                                        <li><a href="#!"><i class="fa-solid fa-check"></i> + 10 пользователей
+                                        </a></li>
+                                        <li><a href="#!"><i class="fa-solid fa-check"></i>Бесплатные обновления
+                                        </a></li>
+                                        <li><a href="#!"><i class="fa-solid fa-check"></i>Ваш логотип в программе</a></li>
+                                    </ul>
+                            </div>
+                            <div class="isRight">
+                                <i class="fa-solid fa-chevron-up"></i>
+                                <h2>1100 руб/мес</h2>
+                                <a href="#!">Оформить подписку</a>
+                            </div>
+                        </div>
+                        <div class="boxIj" data-aos="flip-down">
+                            <div class="ifLeft">
+                                <h2>Апгрейд №1
+                                    к базовой версии</h2>
+                                    <ul>
+                                        <li><a href="#!"> <i class="fa-solid fa-check"></i>Ежемесячная подписка
+                                        </a></li>
+                                        <li><a href="#!"><i class="fa-solid fa-check"></i> + 10 пользователей
+                                        </a></li>
+                                        <li><a href="#!"><i class="fa-solid fa-check"></i>Бесплатные обновления
+                                        </a></li>
+                                        <li><a href="#!"><i class="fa-solid fa-check"></i>Ваш логотип в программе</a></li>
+                                    </ul>
+                            </div>
+                            <div class="isRight">
+                                <img src="./img/section/Group 43.png" alt="no internet">
+                                <h2>1100 руб/мес</h2>
+                                <a href="#!">Оформить подписку</a>
+                            </div>
+                        </div>
+                        <div class="boxIj" data-aos="flip-down">
+                            <div class="ifLeft">
+                                <h2>Апгрейд №1
+                                    к базовой версии</h2>
+                                    <ul>
+                                        <li><a href="#!"> <i class="fa-solid fa-check"></i>Ежемесячная подписка
+                                        </a></li>
+                                        <li><a href="#!"><i class="fa-solid fa-check"></i> + 10 пользователей
+                                        </a></li>
+                                        <li><a href="#!"><i class="fa-solid fa-check"></i>Бесплатные обновления
+                                        </a></li>
+                                        <li><a href="#!"><i class="fa-solid fa-check"></i>Ваш логотип в программе</a></li>
+                                    </ul>
+                            </div>
+                            <div class="isRight">
+                                <img src="./img/section/workspaces_outline.png" alt="no internet">
+                                <h2>1100 руб/мес</h2>
+                                <a href="#!">Оформить подписку</a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="sectionAs">
+            <div class="sectionCenter" data-aos="flip-down">
+                <h2> FOR <strong>RA</strong>.price - это решение для успешного развития</h2>
+                <div class="cardD">
+                    <div class="cardf"><h2>--01</h2> <p>Регулярные обновления и добавление новых функций</p></div>
+                    <div class="cardf"><h2>--02</h2> <p>Понятная система
+                        создания шаблонов</p></div>
+                    <div class="cardf"><h2>--03</h2> <p>Автоматический расчет
+                        материалов и зарплат</p></div>
+                    <div class="cardf"><h2>--04</h2> <p>Изображение вывесок в разрезе при расчетах</p></div>
+                    <div class="cardf"><h2>--05</h2> <p>Защита от случайных ошибок сотрудников</p></div>
+                    <div class="cardf"><h2>--06</h2> <p>Понимание реальной
+                        себестоимости изделия</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section fenesh ! -->
+
+    <!-- article start ! -->
+    <article>
+        <div class="articletop">
+            <div class="articleCenterTop">
+                <div class="CenterLeft" data-aos="zoom-in">
+                    <h2>Хотите протестировать бесплатно?</h2>
+                    <p>Получите инструкцию по установке программы на почту</p>
+                    <input type="email" placeholder="Email">
+                    <div class="Checkbox">
+                        <input type="checkbox">
+                        <p>Я соглашаюсь на орбаботку </p>
+                    </div>
+                    <a href="./index.html">Получить тест драйв</a>
+                </div>
+                <div class="centerRight" data-aos="zoom-in-up">
+                    <img src="./img/article/img2.png" alt="no internet">
+                </div>
+            </div>
+        </div>
+    </article>
+    <!-- article fenesh -->
+
+    <footer>
+        <div class="footerTop">
+            <div class="centerfd">
+                <h2 data-aos="zoom-in-down">Отзывы пользователей</h2>
+                <div class="swiper mySwiper" id="mj" data-aos="zoom-in-left">
+                    <div class="swiper-wrapper" id="ik">
+                      <div class="swiper-slide" id="sd">
+                        <div class="S">S</div>
+                        <h2>Sarah Lewin</h2>
+                        <p>Project manager in Pixels</p>
+                        <h4>I think if you do something and it turns out pretty good, then you should go do something else wonderful, not dwell on it for too long.</h4>
+                    </div>
+                    <div class="swiper-slide" id="sd">
+                        <div style="background-color: #FFE870;" class="S">H</div>
+                        <h2>Sarah Lewin</h2>
+                        <p>Project manager in Pixels</p>
+                        <h4>I think if you do something and it turns out pretty good, then you should go do something else wonderful, not dwell on it for too long.</h4>
+                    </div>
+                    <div class="swiper-slide" id="sd">
+                        <div style="background-color: #FFE870;" class="S">S</div>
+                        <h2>Sarah Lewin</h2>
+                        <p>Project manager in Pixels</p>
+                        <h4>I think if you do something and it turns out pretty good, then you should go do something else wonderful, not dwell on it for too long.</h4>
+                    </div>
+                    <div class="swiper-slide" id="sd">
+                        <div style="background-color: #FFBE72;" class="S">A</div>
+                        <h2>Sarah Lewin</h2>
+                        <p>Project manager in Pixels</p>
+                        <h4>I think if you do something and it turns out pretty good, then you should go do something else wonderful, not dwell on it for too long.</h4>
+                    </div>
+                    <div class="swiper-slide" id="sd">
+                        <div style="background-color: rgb(214, 151, 74);" class="S">U</div>
+                        <h2>Sarah Lewin</h2>
+                        <p>Project manager in Pixels</p>
+                        <h4>I think if you do something and it turns out pretty good, then you should go do something else wonderful, not dwell on it for too long.</h4>
+                    </div>
+                    <div class="swiper-slide" id="sd">
+                        <div style="background-color: #FFE870;" class="S">B</div>
+                        <h2>Sarah Lewin</h2>
+                        <p>Project manager in Pixels</p>
+                        <h4>I think if you do something and it turns out pretty good, then you should go do something else wonderful, not dwell on it for too long.</h4>
+                    </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+            </div>
+        </div>
+        <div class="footerButtomW">
+            <div class="center">
+                <div class="left"data-aos="zoom-out-right">
+                    <h2 >Весь контент принадлежит: ИП Ржавитин А.С., ИНН 583519379849
+                    </h2>
+                    <p>Фотографии, видеоматериалы и тексты, представленные на этом сайте, предназначены для ознакомления, пожалуйста, не используйте их в коммерческих целях.</p>
+                </div>
+                <div class="right">
+                    <p data-aos="zoom-out-left">Политика конфиденциальности
+                        Публичная оферта</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- script js start -->
+    <script src="./js/jquery-3.3.1.slim.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js" integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var swiper = new Swiper('.swiper', {
+          slidesPerView: 3,
+          direction: getDirection(),
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          on: {
+            resize: function () {
+              swiper.changeDirection(getDirection());
+            },
+          },
+        });
+    
+        function getDirection() {
+          var windowWidth = window.innerWidth;
+          var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+    
+          return direction;
+        }
+      </script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+    <script>
+        AOS.init();
+      </script>
+    <!-- scrpt js fenesh -->
+</body>
+</html>
